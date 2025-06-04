@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="images/bg1.jpg" as="image">
+    
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1>Suraj</h1>
+          <!-- <img src="images/logo.png" class="logo" alt="" /> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="cloesmenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <section class="firstSection">
+        <div class="header-text">
+        
+          <!-- <p>Web Developer</p> -->
+          <h1>Hi, I'm <span>Suraj,</span> <br /> from India</h1>
+          <!-- Element to contain animated typing -->
+          <span id="element"></span>
+        </div>
+
+        
+
+      </section>
+
+      </div>
+    </div>
+
+    
+
+    <!-- -------------------about-----------------     -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/2.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello there! I'm Suraj Kerkar, a passionate and creative web developer with a keen interest in crafting innovative solutions
+            </p>
+            <p> My journey into the world of web development began with a fascination for turning ideas into interactive and visually appealing websites.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p> -->
+              <p class="tab-links" onclick="opentab('education')"></p>
+            </div>
+
+
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>Front-End</span><br />HTML, CSS, JavaScript for building user interfaces.</li>
+                <li><span>Back-End</span><br />Understanding server-side development using Node.js and Express.js.</li>
+                <li><span>Database Management</span><br />Utilizing MongoDB for data storage and Mongoose for structured data modeling.</li>
+                <li>
+                  <span>React</span><br />Building user interfaces and single-page applications with React.
+                </li>
+                <li>
+                  <span>Git and Version Control</span><br />Utilizing Git for version control to ensure efficient collaboration and code management.
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />UI/UX Design Training at ET
+                  Institute
+                </li>
+                <li><span>2019 - 2021</span><br />Team lead at StarApp LLC.</li>
+                <li>
+                  <span>2016 - 2017</span><br />Internship at ekart Ecommerce.
+                </li>
+              </ul>
+            </div> -->
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />UI/UX Design Training at ET Institute
+                </li>
+                <li><span>2016</span><br />MBA from MIT Bangalore.</li>
+                <li><span>2014</span><br />BBA from ISM Bangalore.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------services----------------     -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-End Development</h2>
+            <p>
+              Creating visually appealing and responsive user interfaces using HTML, CSS, and JavaScript.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Back-End Development</h2>
+            <p>
+              Developing server-side logic with Node.js and Express.js for efficient web applications.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>MERN Stack Development:</h2>
+            <p>
+              Working with MongoDB, Express.js, React, and Node.js to build modern web applications.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------porfolio---------------- -->
+
+    
+    <div id="porfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+          
+
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>SecureLogin MERN System</h3>
+              <p>
+                Developed a robust MERN stack-based login and registration system, providing a secure and seamless user authentication experience.
+              </p>
+              <p>
+                Leveraged the power of MongoDB for database management, Express.js for the server, React.js for the dynamic frontend, and Node.js for server-side scripting.
+              </p>
+              
+              <a href="https://super-biscotti-2284d2.netlify.app" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-8.jpeg" alt="" />
+            <div class="layer">
+              <h3>Unicorn Enterprises</h3>
+              <p>
+                developed a fully responsive website for Unicorn Enterprises featuring a modern layout and product showcase. The site includes an integrated Mailjet-powered contact form for smooth communication.
+              </p>
+              <p>
+                I also set up the domain, custom business emails, and configured DNS records including SPF, DKIM, and DMARC. This ensured secure email delivery and a professional online presence.
+              </p>
+              
+              <a href="https://unicornenterprises.in/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-4.jpeg" alt="" />
+            <div class="layer">
+              <h3>LED Website</h3>
+              <p>
+                This project involved the development of a dynamic and visually engaging website focused on LED technology for a client.
+              </p>
+              <p>
+                The website was designed to provide comprehensive information about LED products, including their features, benefits, and applications, with a focus on enhancing the client’s digital presence and user engagement.
+              </p>
+              
+              <a href="https://globallight.netlify.app" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/plan-5659443_1920.png" alt="" />
+            <div class="layer">
+              <h3>To-Do-List Web App</h3>
+              <p>
+                Created a dynamic to-do list web application using HTML, CSS, and JavaScript.
+              </p>
+              <p>
+                Implemented interactive features for adding, marking, and deleting tasks in real-time.
+              </p>
+              <p>
+                Utilized local storage to store task data, providing a seamless experience across sessions.
+              </p>
+              <a href="https://to-do-list2022.netlify.app" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          
+          <div class="work">
+            <img src="images/work-7.jpeg" alt="" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>
+                This portfolio website serves as a professional showcase of work, skills, and achievements as a web developer
+              </p>
+              <p>
+                It is designed to present projects, resume, and contact information in a visually appealing and user-friendly manner.
+              </p>
+              
+              <a href="https://freelacingportfolio.netlify.app" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          
+          
+
+          
+
+          
+
+          <div class="work">
+            <img src="images/work-6.jpeg" alt="" />
+            <div class="layer">
+              <h3>Aarti Sangrah</h3>
+              <p>
+                "Aarti Sangrah" is a React-based web application designed to provide users with a collection of aartis in a user-friendly and interactive format.
+              </p>
+              <p>
+                The app aims to enhance the spiritual experience by offering easy access to a variety of aartis
+              </p>
+              
+              <a href="https://6thl7f.csb.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-5.jpeg" alt="" />
+            <div class="layer">
+              <h3>Health Care Website</h3>
+              <p>
+                This project involved the development of a comprehensive healthcare website for a client.
+              </p>
+              <p>
+                The website was designed to provide vital information about healthcare services, facilitate appointment bookings, and improve patient engagement.
+              </p>
+              
+              <a href="https://swasthyahealthcare.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>TinDog Website</h3>
+              <p>
+                Developed a captivating landing page for TinDog, a dog dating platform inspired by Tinder.
+              </p>
+              <p>
+                Implemented responsive design techniques with Bootstrap for cross-device compatibility.
+              </p>
+              <p>
+                The site features a modern design, smooth navigation, and compatibility with various devices.
+              </p>
+              <a href="https://c028c8b1-e175-4b1e-a5e5-946712174288-00-14yu95dc28fga.sisko.repl.co/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div> -->
+
+
+
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+
+    <!-- ---------------contact-------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Us</h1>
+            <p><i class="fas fa-paper-plane"></i>surajkerkar4@gmail.com</p>
+            <!-- <p><i class="fas fa-phone"></i>+91 8369141492</p> -->
+            <div class="social-icons">
+              <a href="https://www.facebook.com/suraj.kerkar.35" target="_blank"><i class="fab fa-facebook"></i> </a>
+              <a href="https://instagram.com/k_suraj_10?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i> </a>
+              <!-- <a href="https://www.linkedin.com/in/suraj-kerkar-a113b8248/"><i class="fab fa-linkedin"></i> </a> -->
+              <a href="https://github.com/SurajKerkar" target="_blank"><i class="fab fa-github"></i> </a>
+            </div>
+
+            <!-- <a href="bg.png" download class="btn btn2">Download CV</a> -->
+          </div>
+
+          <div class="contact-right">
+
+            <form action="https://formspree.io/f/xgvwawpd"
+            method="POST"
+            >
+              <input type="text" name="Name" placeholder="Your Name" required />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <!-- <span id="msg"></span> -->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169; Suraj | All rights reserved</p>
+      </div>
+    </div>
+  </body>
+
+  <script
+      src="https://kit.fontawesome.com/6484029795.js"
+      crossorigin="anonymous"
+    ></script>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Front End Developer",
+        "Back End Developer",
+        "Full Stack Developer",
+        "MERN Stack Developer",
+        "Web Developer"
+      ],
+      typeSpeed: 50,
+    });
+  </script>
+
+  <script src="script.js"></script>
+</html>
